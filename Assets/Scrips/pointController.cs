@@ -30,6 +30,14 @@ public class pointController : MonoBehaviour
         {
             point += 20;
         }
+        else if (other.gameObject.tag == "SmallStarTag")
+        {
+            point += 1;
+        }
+        else if (other.gameObject.tag == "LargeStarTag")
+        {
+            point += 5;
+        }
         this.PointText.GetComponent<Text>().text = point.ToString();
     }
 }
